@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Photo Gallery | The Kingdom in the Sky</title>
+  <link href="logo.webp" rel="icon" type="image/webp"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header class="top-header">
+   <div class="container">
+    <div class="contact-info">
+     <span><strong> Maseru, Kingdom of Lesotho</strong></span>
+     <span><strong>+266 51654539</strong> </span>
+     <span>
+      <strong> nkoelesole66@gmail.com</strong></span>
+    </div>
+    <div class="logo">
+     <a class="logo-badge" href="index.html" title="Visit Lesotho - The Kingdom in the Sky">
+      <img alt="Lesotho - The Kingdom in the Sky" class="site-logo" src="logo.webp"/>
+     </a>
+    </div>
+   </div>
+  </header>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+   <div class="container">
+    <a class="navbar-brand" href="index.html">
+     <img alt="Lesotho Logo" class="navbar-logo" src="logo.webp"/>
+     <span> VISIT LESOTHO</span>
+    </a>
+    <button aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#mainNavbar" data-bs-toggle="collapse" type="button">
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNavbar">
+     <ul class="navbar-nav me-auto">
+      <li class="nav-item">
+       <a class="nav-link" href="index.html"> Home</a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="about.html"> About Lesotho  </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="destinations.html">Destinations </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="gallery.html">Gallery</a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+     </ul>
+     <button aria-label="Toggle dark and light display modes" class="btn theme-btn" id="themeToggle" type="button">Dark Mode</button>
+    </div>
+   </div>
+  </nav>
+  <main>
+   <section class="gallery-hero">
+    <div class="hero-content">
+     <h1> Discover Lesotho Through Our Lens</h1>
+     <div class="heading-line">
+     </div>
+     <p class="lead-subtitle">Explore majestic peaks, roaring waterfalls, historic plateaus, and cultural wonders. </p>
+    </div>
+   </section>
+   <section class="gallery-section">
+    <div class="container">
+     <div class="text-center mb-4">
+      <h2 class="section-title">Photo Showcase</h2>
+      <p class="text-muted">Filter images by category or click on any photo for a full-screen view.</p>
+     </div>
+     <div class="text-center mb-5">
+      <button class="filter-btn active" data-filter="all" type="button">All Photos</button>
+      <button class="filter-btn" data-filter="nature" type="button">Nature</button>
+      <button class="filter-btn" data-filter="adventure" type="button"> Adventure</button>
+      <button class="filter-btn" data-filter="landscape" type="button">  Landscapes
+      </button>
+      <button class="filter-btn" data-filter="culture" type="button">Culture &amp; Heritage </button>
+     </div>
+     <div class="row g-4" id="galleryGrid">
+      <div class="col-sm-6 col-lg-4 gallery-card" data-category="nature landscape adventure">
+       <div class="gallery-item" data-image="OIP.webp" data-title="Maluti Mountain Trails">
+        <img alt="High-altitude hiking trail in the Maluti mountains" loading="lazy" src="OIP.webp"/>
+        <div class="gallery-caption">
+         <h3>Maluti Mountain Trails </h3>
+         <p> Rugged hiking routes across soaring ridges</p>
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 gallery-card" data-category="nature landscape">
+       <div class="gallery-item" data-image="countyside.webp" data-title="Peaceful Countryside">
+        <img alt="Peaceful rural hillside countryside in Lesotho" loading="lazy" src="countyside.webp"/>
+        <div class="gallery-caption">
+         <h3> Peaceful Countryside </h3>
+         <p>Tranquil valley settlements and rolling pastures </p>
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 gallery-card" data-category="adventure culture">
+       <div class="gallery-item" data-image="horse.webp" data-title="Basotho Pony Trekking">
+        <img alt="Rider on a hardy Basotho pony traversing alpine terrain" loading="lazy" src="horse.webp"/>
+        <div class="gallery-caption">
+         <h3> Basotho Pony Trekking </h3>
+         <p>Traditional horseback travel through rugged passes </p>
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 gallery-card" data-category="nature landscape">
+       <div class="gallery-item" data-image="OIP (2).webp" data-title="Highland Water Vistas">
+        <img alt="Clear lake waters reflecting towering mountains in Lesotho" loading="lazy" src="OIP (2).webp"/>
+        <div class="gallery-caption">
+         <h3>Highland Water Vistas</h3>
+         <p>Pristine mountain reservoirs and reflecting waters</p>
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 gallery-card" data-category="landscape nature">
+       <div class="gallery-item" data-image="lesotho-highlands.jpg" data-title="Lesotho Highlands Panorama">
+        <img alt="Breathtaking panoramic view of Lesotho highlands and deep valleys" loading="lazy" src="lesotho-highlands.jpg"/>
+        <div class="gallery-caption">
+         <h3>Lesotho Highlands Panorama</h3>
+         <p>Endless mountain horizons touching the clouds</p>
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 gallery-card" data-category="adventure landscape">
+       <div class="gallery-item" data-image="afriski.jpg" data-title="AfriSki Winter Snow">
+        <img alt="Snow-covered ski slopes and chalets at AfriSki Mountain Resort" loading="lazy" src="afriski.jpg"/>
+        <div class="gallery-caption">
+         <h3>AfriSki Winter Snow</h3>
+         <p> Winter wonderland at 3,222m in the Maluti range</p>
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 gallery-card" data-category="nature landscape adventure">
+       <div class="gallery-item" data-image="maletsunyane.webp" data-title="Maletsunyane Falls">
+        <img alt="192-meter Maletsunyane waterfall plunging into a deep gorge" loading="lazy" src="maletsunyane.webp"/>
+        <div class="gallery-caption">
+         <h3>Maletsunyane Falls</h3>
+         <p>Thunderous 192m drop near Semonkong</p>
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 gallery-card" data-category="culture landscape">
+       <div class="gallery-item" data-image="thaba bosiu.jpg" data-title="Thaba Bosiu Cultural Plateau">
+        <img alt="Historic Thaba Bosiu mountain plateau and cultural site" loading="lazy" src="thaba bosiu.jpg"/>
+        <div class="gallery-caption">
+         <h3>Thaba Bosiu Cultural Plateau</h3>
+         <p>The birthplace and spiritual fortress of the Basotho</p>
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 gallery-card" data-category="landscape nature">
+       <div class="gallery-item" data-image="katsedam.webp" data-title="Katse Dam Engineering">
+        <img alt="Massive curved concrete wall of Katse Dam in the mountains" loading="lazy" src="katsedam.webp"/>
+        <div class="gallery-caption">
+         <h3>Katse Dam Engineering</h3>
+         <p>Africa's second largest arch dam high in the Malutis</p>
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 gallery-card" data-category="nature landscape">
+       <div class="gallery-item" data-image="sehlabathebe.webp" data-title="Sehlabathebe Wilderness">
+        <img alt="Sculpted sandstone arches and grasslands of Sehlabathebe" loading="lazy" src="sehlabathebe.webp"/>
+        <div class="gallery-caption">
+         <h3> Sehlabathebe Wilderness</h3>
+         <p> UNESCO World Heritage arches and alpine flora</p>
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 gallery-card" data-category="adventure landscape">
+       <div class="gallery-item" data-image="sani.webp" data-title="Sani Pass Ascent">
+        <img alt="Hairpin twists of the iconic Sani Pass 4x4 mountain route" loading="lazy" src="sani.webp"/>
+        <div class="gallery-caption">
+         <h3>Sani Pass Ascent</h3>
+         <p>Daring 4x4 route ascending to the highest pub in Africa</p>
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 gallery-card" data-category="culture">
+       <div class="gallery-item" data-image="avani.jpg" data-title="Basotho Hospitality &amp; Stays">
+        <img alt="Relaxed resort atmosphere and hospitality in Maseru" loading="lazy" src="avani.jpg"/>
+        <div class="gallery-caption">
+         <h3>Basotho Hospitality &amp; Stays</h3>
+         <p>Warm welcomes and serene hotel resorts</p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <div aria-hidden="true" aria-labelledby="imageModalTitle" class="modal fade" id="imageModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+     <div class="modal-content">
+      <div class="modal-header border-secondary">
+       <h2 class="modal-title fs-5" id="imageModalTitle">Gallery Image</h2>
+       <button aria-label="Close" class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+       </button>
+      </div>
+      <div class="modal-body text-center p-3">
+       <img alt="Full size gallery view" class="modal-image" id="modalImage" src=""/>
+      </div>
+     </div>
+    </div>
+   </div>
+  </main>
+  <footer class="footer">
+   <div class="container">
+    <a class="footer-logo-wrap" href="index.html" title="Visit Lesotho">
+     <img alt="Lesotho Tourism Logo" class="footer-logo" src="logo.webp"/>
+    </a>
+    <h3>VISIT LESOTHO</h3>
+    <p class="footer-tagline">The Kingdom in the Sky</p>
+    <p class="footer-desc">Discover soaring mountains, rich Basotho heritage, and unforgettable high-altitude adventures.</p>
+    <div class="footer-links">
+     <a href="index.html">Home</a>
+     <a href="about.html">About Lesotho</a>
+     <a href="destinations.html">Destinations</a>
+     <a href="gallery.html">Gallery</a>
+     <a href="contact.html">Contact</a>
+    </div>
+    <p class="copyright">
+     &copy; 2026 Visit Lesotho.
+    </p>
+   </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="script.js">
+  </script>
+ </body>
+</html>
+
